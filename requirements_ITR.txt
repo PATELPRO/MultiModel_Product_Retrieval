@@ -1,0 +1,11 @@
+torch>=2.1
+transformers>=4.40
+peft>=0.11
+torchao>=0.16
+boto3
+awscli
+pandas
+numpy
+Pillow
+scikit-learn
+huggingface_hub
