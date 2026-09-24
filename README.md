@@ -83,22 +83,6 @@ Full per-category tables, correlation analysis, and an accompanying formula-driv
 - **No regressions:** across a 4-tier classification (Strong / Moderate / Marginal / Regressed) applied to all 29 categories in both directions, zero categories regressed meaningfully.
 - **Fine-tuning strengthened cross-directional consistency:** correlation between text→image and image→text per-category performance rose from r = 0.916 (baseline) to r = 0.939 (fine-tuned) — though the *magnitude* of each category's gain was largely direction-independent (r ≈ −0.07), a distinction discussed in full in the results documentation.
 
-## Repository Structure
-
-```
-├── README.md
-├── docs/
-│   ├── ABO_Dataset_Construction.pdf        # data cleaning methodology
-│   ├── CLIP_Zero_Shot_Baseline.pdf         # baseline results & CLIP technical reference
-│   ├── Results_Comparison.pdf              # zero-shot vs. fine-tuned analysis
-│   └── Results_Analysis.xlsx               # formula-driven results workbook
-├── notebooks/
-│   └── Image_Text_Retrieval_Pipeline.ipynb # end-to-end: data cleaning → embeddings → training → evaluation
-└── requirements.txt
-```
-
-*(The pipeline was developed iteratively across several working notebooks; the version in this repository is consolidated into a single, cleaned, linearly runnable notebook covering data cleaning, embedding generation, LoRA fine-tuning, and evaluation.)*
-
 ## Setup & Reproduction
 
 ```bash
